@@ -12,3 +12,7 @@ a simple task manager in your terminal<br /><br />
 Другие команды:
 <br />:сброc - для сброса таймеров и тхт лога
 <br />:сохр - для сохранения excel без выхода.
+<br /><br />
+Для работы необходимы библиотеки:<br />
+openpyxl<br />
+colorama 
