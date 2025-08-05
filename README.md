@@ -7,6 +7,8 @@ a simple task manager in your terminal<br />
 <br />:s, :save, :сохр - для сохранения таблицы без выхода
 <br />:r, :reset; :сброс - для сброса таймеров и лога
 <br />CTRL-C - для справки и обновления таймера текущей задачи
+<br />
+<br />
 необходимые библиотеки:<br />
 openpyxl<br />
 colorama 
