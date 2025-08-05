@@ -150,7 +150,7 @@ def main():
     recover_from_log()
     last_action_time = time.time()
 
-    print(f"\nЛог {today}{Fore.GREEN}.Вводи текущие задачи."
+    print(f"\n{Fore.YELLOW}Лог {today} {Fore.GREEN}Вводи текущие задачи."
           f"\n{Fore.RED}:q, :exit, :end, :выход{Fore.WHITE} выход с сохранением таблицы"
           f"\n{Fore.RED}:s, :save, :сохр{Fore.WHITE} для сохранения таблицы без выхода"
           f"\n{Fore.RED}:r, :reset; :сброс{Fore.WHITE} для сброса таймеров и лога"
@@ -198,4 +198,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
