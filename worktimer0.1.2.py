@@ -96,12 +96,12 @@ def export_to_excel():
     for timestamp, task, seconds, start_time, end_time in session_log:
         minutes = seconds / 60
         hours = seconds / 3600
-        ws.append([timestamp, task, seconds, round(minutes, 2), round(hours, 2), start_time, end_time or ""])
+        ws.append([start_time, end_time, task, seconds, round(minutes), round(hours, 2)  or ""])
 
     final_path = get_unique_xlsx_path()
     try:
         wb.save(final_path)
-        print(f"\Таблица сохранена: {final_path}")
+        print(f"{Fore.GREEN}Таблица сохранена: {Fore.MAGENTA}{final_path}")
     except PermissionError:
         print(f"{Fore.RED}Ошибка: Не удалось сохранить {final_path}. Возможно, файл открыт в другой программе. Закройте файл и попробуйте снова.{Style.RESET_ALL}")
     except Exception as e:
@@ -189,9 +189,10 @@ def main():
             now = time.time()
             overall_time = format_timer(now - log_start_time) if log_start_time else "00:00:00"
             print(f"\n{Fore.MAGENTA}Время с начала лога: {overall_time}{Style.RESET_ALL}")
-            print(":q, :exit, :end, :выход - для завершения,"
-                  f"\n:r, :reset; :сброс - для сброса таймеров и лога"
-                  f"\n:s, :save, :сохр - для сохранения таблицы.")
+            print(f"{Fore.RED}:q, :exit, :end, :выход{Fore.WHITE} выход с сохранением таблицы"
+            f"\n{Fore.RED}:s, :save, :сохр{Fore.WHITE} для сохранения таблицы без выхода"
+            f"\n{Fore.RED}:r, :reset; :сброс{Fore.WHITE} для сброса таймеров и лога"
+            f"\n{Fore.RED}CTRL-C{Fore.WHITE} вывод этого сообщения")
         except Exception as e:
             print(f"⚠ Ошибка: {e}")
 
