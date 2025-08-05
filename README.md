@@ -1,5 +1,5 @@
 # worktimer
-a simple task manager in your terminal<br />
+routine manager in terminal<br />
 простой таймер задач в терминале<br /><br />
 введи текущую задачу. что сейчас делаешь?<br />
 всё что введёшь - запишется в текстовый файл и таблицу<br />
