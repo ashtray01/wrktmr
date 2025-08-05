@@ -192,9 +192,10 @@ def main():
             print(f"{Fore.RED}:q, :exit, :end, :выход{Fore.WHITE} выход с сохранением таблицы"
             f"\n{Fore.RED}:s, :save, :сохр{Fore.WHITE} для сохранения таблицы без выхода"
             f"\n{Fore.RED}:r, :reset; :сброс{Fore.WHITE} для сброса таймеров и лога"
-            f"\n{Fore.RED}CTRL-C{Fore.WHITE} вывод этого сообщения")
+            f"\n{Fore.RED}CTRL-C{Fore.WHITE}  для справки и обновления таймера текущей задачи")
         except Exception as e:
             print(f"⚠ Ошибка: {e}")
 
 if __name__ == "__main__":
     main()
+
