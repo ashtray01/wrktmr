@@ -10,9 +10,17 @@ init()
 # Путь к директории скрипта
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
-today = datetime.date.today().strftime("%Y-%m-%d")
-log_txt_path = os.path.join(SCRIPT_DIR, f"{today}.txt")
-log_xlsx_path = os.path.join(SCRIPT_DIR, f"{today}.xlsx")
+# Текущая дата
+today = datetime.date.today()
+year, month, day = today.strftime("%Y"), today.strftime("%m"), today.strftime("%d")
+
+# Создание директории год/месяц/день
+log_dir = os.path.join(SCRIPT_DIR, year, month, day)
+os.makedirs(log_dir, exist_ok=True)
+
+# Пути к файлам логов
+log_txt_path = os.path.join(log_dir, f"{today.strftime('%Y-%m-%d')}.txt")
+log_xlsx_path = os.path.join(log_dir, f"{today.strftime('%Y-%m-%d')}.xlsx")
 
 session_log = []
 start_time = None
@@ -42,7 +50,7 @@ def recover_from_log():
                     task = line[line.find("]")+2:line.rfind("|")].strip() if "|" in line else line[line.find("]")+2:].strip()
                     seconds = int(line[line.rfind("|")+1:line.rfind("сек")].strip()) if "сек" in line else 0
                     if i == 0 and log_start_time is None:
-                        log_start_time = datetime.datetime.strptime(f"{today} {timestamp}", "%Y-%m-%d %H:%M:%S").timestamp()
+                        log_start_time = datetime.datetime.strptime(f"{today.strftime('%Y-%m-%d')} {timestamp}", "%Y-%m-%d %H:%M:%S").timestamp()
                     if task != "Начало дня":
                         session_log.append((timestamp, task, seconds, timestamp, None))
                         total_seconds += seconds
@@ -81,7 +89,7 @@ def log_action(task):
             f.write(f"[{timestamp}] Начало дня\n")
 
 def get_unique_xlsx_path():
-    base_path = os.path.join(SCRIPT_DIR, f"{today}")
+    base_path = os.path.join(log_dir, f"{today.strftime('%Y-%m-%d')}")
     version = 1
     while os.path.exists(f"{base_path}_ver{version}.xlsx"):
         version += 1
@@ -136,9 +144,12 @@ def reset_program():
     task_durations = {}
     task_start_times = {}
     log_start_time = time.time()
-    today_new = datetime.date.today().strftime("%Y-%m-%d")
-    log_txt_path = os.path.join(SCRIPT_DIR, f"{today_new}.txt")
-    log_xlsx_path = os.path.join(SCRIPT_DIR, f"{today_new}.xlsx")
+    today_new = datetime.date.today()
+    year, month, day = today_new.strftime("%Y"), today_new.strftime("%m"), today_new.strftime("%d")
+    log_dir = os.path.join(SCRIPT_DIR, year, month, day)
+    os.makedirs(log_dir, exist_ok=True)
+    log_txt_path = os.path.join(log_dir, f"{today_new.strftime('%Y-%m-%d')}.txt")
+    log_xlsx_path = os.path.join(log_dir, f"{today_new.strftime('%Y-%m-%d')}.xlsx")
     with open(log_txt_path, "w", encoding="utf-8") as f:
         f.write(f"[{datetime.datetime.now().strftime('%H:%M:%S')}] Начало дня\n")
     print(f"{Fore.YELLOW}Сброшено! Новый лог: {log_txt_path}{Style.RESET_ALL}")
@@ -150,7 +161,7 @@ def main():
     recover_from_log()
     last_action_time = time.time()
 
-    print(f"\n{Fore.YELLOW}Лог {today}"
+    print(f"\n{Fore.YELLOW}Лог {today.strftime('%Y-%m-%d')}"
           f"\n{Fore.GREEN}Вводи текущую задачу."
           f"\n{Fore.RED}:q, :exit, :end, :выход{Fore.WHITE} выход с сохранением таблицы"
           f"\n{Fore.RED}:s, :save, :сохр{Fore.WHITE} для сохранения таблицы без выхода"
@@ -159,9 +170,14 @@ def main():
 
     while True:
         try:
-            current_day = datetime.date.today().strftime("%Y-%m-%d")
+            current_day = datetime.date.today()
             if current_day != today:
                 today = current_day
+                year, month, day = today.strftime("%Y"), today.strftime("%m"), today.strftime("%d")
+                log_dir = os.path.join(SCRIPT_DIR, year, month, day)
+                os.makedirs(log_dir, exist_ok=True)
+                log_txt_path = os.path.join(log_dir, f"{today.strftime('%Y-%m-%d')}.txt")
+                log_xlsx_path = os.path.join(log_dir, f"{today.strftime('%Y-%m-%d')}.xlsx")
                 reset_program()
                 continue
 
@@ -191,14 +207,11 @@ def main():
             overall_time = format_timer(now - log_start_time) if log_start_time else "00:00:00"
             print(f"\n{Fore.MAGENTA}Время с начала лога: {overall_time}{Style.RESET_ALL}")
             print(f"{Fore.RED}:q, :exit, :end, :выход{Fore.WHITE} выход с сохранением таблицы"
-            f"\n{Fore.RED}:s, :save, :сохр{Fore.WHITE} для сохранения таблицы без выхода"
-            f"\n{Fore.RED}:r, :reset; :сброс{Fore.WHITE} для сброса таймеров и лога"
-            f"\n{Fore.RED}CTRL-C{Fore.WHITE}  для справки и обновления таймера текущей задачи")
+                  f"\n{Fore.RED}:s, :save, :сохр{Fore.WHITE} для сохранения таблицы без выхода"
+                  f"\n{Fore.RED}:r, :reset; :сброс{Fore.WHITE} для сброса таймеров и лога"
+                  f"\n{Fore.RED}CTRL-C{Fore.WHITE} для справки и обновления таймера текущей задачи")
         except Exception as e:
             print(f"⚠ Ошибка: {e}")
 
 if __name__ == "__main__":
     main()
-
-
-
