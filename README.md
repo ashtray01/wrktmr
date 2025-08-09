@@ -2,7 +2,7 @@
 routine manager in terminal
 <br />простой менеджер задач в терминале
 <br />
-<br />$${\color{lightgreen}Light \space Green}$$Вводи задачи (для завершённых задач начни с '!')
+<br />$${\color{Вводи задачи (для завершённых задач начни с '!')}Light \space Green}$$
 <br />Команды:
 <br />
 <br />:home :h — завершить день
