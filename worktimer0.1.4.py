@@ -8,11 +8,11 @@ from colorama import init, Fore, Style
 
 init(autoreset=True)
 
-# Папка для логов рядом со скриптом
+# Папка для логов на рабочем столе пользователя
 def get_log_dir():
-    script_dir = os.path.dirname(os.path.abspath(__file__))
+    desktop_dir = os.path.join(os.path.expanduser("~"), "Desktop")
     today = datetime.date.today()
-    return os.path.join(script_dir, "logs", str(today.year), f"{today.month:02d}", f"{today.day:02d}")
+    return os.path.join(desktop_dir, "logs", str(today.year), f"{today.month:02d}", f"{today.day:02d}")
 
 LOG_DIR = get_log_dir()
 os.makedirs(LOG_DIR, exist_ok=True)
@@ -70,7 +70,7 @@ def save_backup():
             f.write(f"{t['task']} | {t['link']} | {t['time_str']} | {t['hours_hundredths']}\n")
 
 def save_excel():
-    """Сохраняем Excel-отчет"""
+    """Сохраняем Excel-отчет на рабочий стол"""
     today = datetime.date.today().strftime("%Y-%m-%d")
     file_name = os.path.join(LOG_DIR, f"{today}.xlsx")
 
