@@ -4,8 +4,8 @@ routine manager in terminal
 <br />
 <br />Вводи задачи.
 <br />Для завершённых задач начни с **!**
-<br />Команды:
 <br />
+<br />Команды:
 <br />:home :h — завершить день
 <br />:s :save — сохранить в Excel
 <br />:q :quit :exit — выйти
