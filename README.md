@@ -18,7 +18,7 @@ routine manager in terminal
 <br />![Screenshot 7](https://github.com/ashtray01/worktimer/blob/main/screenshots/Screenshot_7.png)
 <br />
 <br />Все задачи сохраняются в тхт файл по мере поступления
-<br />в директорию рядом со скриптом. Сортировка по дате.
+<br />на рабочий стол в папку logs. Сортировка по дате.
 <br />Выход через CTRL-C автоматически сохранит таблицу.
 <br />
 <br />необходимые библиотеки:
