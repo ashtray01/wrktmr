@@ -6,7 +6,7 @@ routine manager in terminal
 <br />Для завершённых задач начни с **!**
 <br />
 <br />Команды:
-<br />:home :h — завершить день
+<br />:h — завершить день
 <br />:s — сохранить в Excel
 <br />:e1 — отредактировать задачу 1
 <br />:q — выйти
@@ -20,3 +20,4 @@ routine manager in terminal
 <br />colorama 
 <br />signal
 <br />
+
