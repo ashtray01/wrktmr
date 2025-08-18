@@ -5,7 +5,6 @@ routine manager in terminal
 <br />Вводи задачи.
 <br />Для завершённых задач начни с **!**
 <br />
-<br />пиши задачу текущую, если закончил задачу, начни с !
 <br />:h — завершить день (сохранить Excel и выйти)
 <br />:s — сохранить Excel
 <br />:q — выйти (с сохранением Excel)
@@ -23,6 +22,7 @@ routine manager in terminal
 <br />colorama 
 <br />signal
 <br />
+
 
 
 
