@@ -1,10 +1,10 @@
-# worktimer gui
+# wrktmr gui
 <br />[wrktmr022.7.zip](https://github.com/ashtray01/wrktmr/releases/download/022.7/wrktmr022.7.zip)
 <br />в новой версии добавлен интерфейс
 <br />также переработаны некоторые механики
 <br />![image](Screenshot_1.png)
 
-# worktimer terminal
+# wrktmr trmnl
 routine manager in terminal
 <br />менеджер задач в терминале
 <br />
@@ -23,6 +23,7 @@ routine manager in terminal
 <br />Все задачи сохраняются YYYY-MM-DD.txt на рабочий стол в папку logs.
 <br />Сортировка по дате в папках на рабочем столе: .\logs\2025\08\15\2025-08-15.xlsx
 <br />
+
 
 
 
