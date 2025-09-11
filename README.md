@@ -10,6 +10,7 @@
 - запоминает все задачи если комп завис
 - красивый скроллбар :D
 - ну и еще немножко косметики и микроизменений
+<br />
 <br />![image](https://github.com/ashtray01/wrktmr/blob/main/images/scr024.3.png)
 
 # wrktmr trmnl
@@ -31,6 +32,7 @@ routine manager in terminal
 <br />Все задачи сохраняются YYYY-MM-DD.txt на рабочий стол в папку logs.
 <br />Сортировка по дате в папках на рабочем столе: .\logs\2025\08\15\2025-08-15.xlsx
 <br />
+
 
 
 
