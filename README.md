@@ -14,6 +14,7 @@
 ![image](https://github.com/ashtray01/wrktmr/blob/main/images/scr024.3.png)
 
 # wrktmr trmnl
+[wrktmr021.zip](https://github.com/ashtray01/wrktmr/releases/download/021/wrktmr021.zip)
 routine manager in terminal
 <br />менеджер задач в терминале
 <br />
@@ -32,6 +33,7 @@ routine manager in terminal
 <br />Все задачи сохраняются YYYY-MM-DD.txt на рабочий стол в папку logs.
 <br />Сортировка по дате в папках на рабочем столе: .\logs\2025\08\15\2025-08-15.xlsx
 <br />
+
 
 
 
