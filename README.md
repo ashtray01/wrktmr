@@ -1,5 +1,5 @@
 # wrktmr gui
-<br />[wrktmr024.3.zip](https://github.com/ashtray01/wrktmr/releases/download/022.7/wrktmr024.3.zip)
+[wrktmr024.3.zip](https://github.com/ashtray01/wrktmr/releases/download/022.7/wrktmr024.3.zip)
 <br />
 - GUI!
 - иконка!
@@ -15,7 +15,7 @@
 
 # wrktmr trmnl
 [wrktmr021.zip](https://github.com/ashtray01/wrktmr/releases/download/021/wrktmr021.zip)
-routine manager in terminal
+<br />routine manager in terminal
 <br />менеджер задач в терминале
 <br />
 <br />Вводи задачи.
@@ -33,6 +33,7 @@ routine manager in terminal
 <br />Все задачи сохраняются YYYY-MM-DD.txt на рабочий стол в папку logs.
 <br />Сортировка по дате в папках на рабочем столе: .\logs\2025\08\15\2025-08-15.xlsx
 <br />
+
 
 
 
