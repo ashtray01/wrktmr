@@ -33,7 +33,8 @@
 - Все задачи сохраняются YYYY-MM-DD.txt на рабочий стол в папку logs.
 - Сортировка по дате в папках на рабочем столе: .\logs\2025\08\15\2025-08-15.xlsx
 
-![image](https://github.com/ashtray01/wrktmr/blob/main/images/scr024.3.png)
+![image](https://github.com/ashtray01/wrktmr/blob/main/images/scr021.png)
+
 
 
 
