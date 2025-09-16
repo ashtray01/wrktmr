@@ -1,7 +1,7 @@
 # wrktmr gui
 [wrktmr031.6.zip](https://github.com/ashtray01/wrktmr/releases/download/031.6/wrktmr031.6.zip)
 <br /><br />
-![image](https://github.com/ashtray01/wrktmr/blob/main/images/scr024.3.png)
+![image](https://github.com/ashtray01/wrktmr/blob/main/images/scr031.6.png)
 <br />
 - монолитный exe
 - точное соответствие когда началась задача и выполнена
@@ -19,6 +19,7 @@
 - Сортировка по дате в папках на рабочем столе: .\logs\2025\08\15\2025-08-15.xlsx
 
 ![image](https://github.com/ashtray01/wrktmr/blob/main/images/scr021.png)
+
 
 
 
