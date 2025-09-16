@@ -8,7 +8,6 @@
 - возможность ввода времени в формате 1453-1628, эквивалентно 14:53-16:28
 - дополнительные столбцы в отчёте эксель
 - мелкие доработочки
-![image](https://github.com/ashtray01/wrktmr/blob/main/images/scr024.3.png)
 
 # wrktmr trmnl
 [wrktmr021.zip](https://github.com/ashtray01/wrktmr/releases/download/021/wrktmr021.zip)
@@ -20,6 +19,7 @@
 - Сортировка по дате в папках на рабочем столе: .\logs\2025\08\15\2025-08-15.xlsx
 
 ![image](https://github.com/ashtray01/wrktmr/blob/main/images/scr021.png)
+
 
 
 
