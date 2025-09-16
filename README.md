@@ -1,16 +1,12 @@
 # wrktmr gui
-[wrktmr024.3.zip](https://github.com/ashtray01/wrktmr/releases/download/022.7/wrktmr024.3.zip)
+[wrktmr031.6.zip](https://github.com/ashtray01/wrktmr/releases/download/031.6/wrktmr031.6.zip)
+![image](https://github.com/ashtray01/wrktmr/blob/main/images/scr024.3.png)
 <br />
-- GUI!
-- иконка!
-- более лаконичный интерфейс
-- теперь только темная тема
-- отправлять задачи можно по Enter
-- запоминает положение и размер окна после выхода
-- запоминает все задачи если комп завис
-- красивый скроллбар :D
-- ну и еще немножко косметики и микроизменений
-
+- монолитный exe
+- точное соответствие когда началась задача и выполнена
+- возможность ввода времени в формате 1453-1628, эквивалентно 14:53-16:28
+- дополнительные столбцы в отчёте эксель
+- мелкие доработочки
 ![image](https://github.com/ashtray01/wrktmr/blob/main/images/scr024.3.png)
 
 # wrktmr trmnl
@@ -23,6 +19,7 @@
 - Сортировка по дате в папках на рабочем столе: .\logs\2025\08\15\2025-08-15.xlsx
 
 ![image](https://github.com/ashtray01/wrktmr/blob/main/images/scr021.png)
+
 
 
 
