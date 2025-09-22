@@ -1,5 +1,4 @@
 <img width="597" height="768" alt="Screenshot_1" src="https://github.com/user-attachments/assets/95140c75-98de-4b18-8f98-80decb263d5d" /><img width="597" height="768" alt="Screenshot_1" src="https://github.com/user-attachments/assets/c4812518-8be1-47e1-a9b0-4d0ee60e2a6d" /># wrktmr gui
-[wrktmr034.5](https://github.com/ashtray01/wrktmr/releases/download/034.5/wrktmr034.5.zip)
 - Добавлена функциональность паузы и возобновления для активных задач
 - Реализованы кнопки "Пауза" и "Продолжить" для активных задач
 - Добавлены inline-кнопки подтверждения завершения задачи ("Да"/"Нет") прямо в виджете задачи
@@ -27,6 +26,7 @@
 - Сортировка по дате в папках на рабочем столе: .\logs\2025\08\15\2025-08-15.xlsx
 
 ![image](https://github.com/ashtray01/wrktmr/blob/main/images/scr021.png)
+
 
 
 
