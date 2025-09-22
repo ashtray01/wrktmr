@@ -1,4 +1,4 @@
-https://github.com/ashtray01/wrktmr/blob/main/images/scr034.5.png
+!https://github.com/ashtray01/wrktmr/blob/main/images/scr034.5.png
 - Добавлена функциональность паузы и возобновления для активных задач
 - Реализованы кнопки "Пауза" и "Продолжить" для активных задач
 - Добавлены inline-кнопки подтверждения завершения задачи ("Да"/"Нет") прямо в виджете задачи
@@ -26,6 +26,7 @@ https://github.com/ashtray01/wrktmr/blob/main/images/scr034.5.png
 - Сортировка по дате в папках на рабочем столе: .\logs\2025\08\15\2025-08-15.xlsx
 
 ![image](https://github.com/ashtray01/wrktmr/blob/main/images/scr021.png)
+
 
 
 
