@@ -1,4 +1,4 @@
-### wrktm gui
+### wrktmr gui
 
 [Скачать wrktmr035.4.zip](https://github.com/ashtray01/wrktmr/releases/download/035.4/wrktmr035.4.zip)
 #### **Ключевые нововведения:**
