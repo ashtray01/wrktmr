@@ -1,4 +1,4 @@
-### **WRKTMR - ВЕРСИЯ 0.35.4**
+### WRKTMR
 
 [Скачать wrktmr035.4.zip](https://github.com/ashtray01/wrktmr/releases/download/034.5/wrktmr035.4.zip)
 #### **Ключевые нововведения:**
@@ -8,6 +8,7 @@
 
 #### **Скриншот интерфейса:**
 ![Скриншот версии 0.34.5](https://github.com/ashtray01/wrktmr/blob/main/images/scr034.5.png)
+
 
 
 
