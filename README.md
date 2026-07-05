@@ -8,7 +8,7 @@
 
 ### wrktmr v040 (релиз)
 
-[Скачать wrktmr-v040.zip winx64](https://github.com/ashtray01/wrktmr/releases/download/v040/wrktmr-v040.zip)
+[Скачать wrktmr040.zip winx64](https://github.com/ashtray01/wrktmr/releases/download/v040/wrktmr-v040.zip)
 
 #### Ключевые нововведения:
 - **Синхронизация задач** — экспорт в ICS/iCalendar (Outlook, Google Calendar, Thunderbird) и прямая синхронизация с CalDAV-серверами (Nextcloud, iCloud, Yahoo, Zimbra)
