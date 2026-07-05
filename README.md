@@ -8,7 +8,8 @@
 
 ### wrktmr v041 (релиз)
 
-[Скачать wrktmr041.zip winx64](http://ashcloud.ru/wrktmr041.zip)
+[Скачать wrktmr041.zip winx64](http://ashcloud.ru/wrktmr041.zip)<br>
+ссылка внешняя, потому что гитхаб запретил загружать больше 25мб
 
 
 #### Ключевые нововведения:
