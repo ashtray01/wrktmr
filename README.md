@@ -109,17 +109,17 @@
 git clone https://github.com/ashtray01/wrktmr.git
 cd wrktmr
 python -m pip install -r requirements.txt
-python wrktmr040.py
+python wrktmr041.py
 ```
 
 ### Сборка .exe (Windows)
 ```bash
-build_040.bat
+build_041.bat
 ```
 Готовый `wrktmr.exe` в папке `dist/`.
 
 ### Готовый .exe
-Скачайте `wrktmr-v040.zip` со [страницы релизов](https://github.com/ashtray01/wrktmr/releases) — распакуйте и запустите `wrktmr.exe`.
+Скачайте `wrktmr041.zip` со [моей домашней страницы](https://ashcloud.ru/wrktmr041.zip) — распакуйте и запустите `wrktmr.exe`.
 
 ---
 
@@ -158,7 +158,7 @@ lxml
 
 | Ветка | Версии | Описание |
 |-------|--------|----------|
-| `main` | **v040** | PyQt6 GUI + синхронизация ICS/CalDAV, подсказки, расширенные настройки |
+| `main` | **v041** | PyQt6 GUI + синхронизация ICS/CalDAV, подсказки, расширенные настройки |
 | `main` | v035.5 | Тёмный заголовок, улучшенная пауза/возобновление |
 | `main` | v034.5 | Пауза/продолжение таймера, окно настроек |
 | `gui-stable` | v031–v035 | PyQt6 GUI, тёмная тема |
@@ -167,7 +167,7 @@ lxml
 
 ---
 
-## Полный список изменений v040
+## Полный список изменений v041
 
 ### Синхронизация
 - Экспорт задач в ICS/iCalendar (совместимость с Outlook, Google Calendar, Thunderbird, Apple iCal)
